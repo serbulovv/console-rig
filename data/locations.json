@@ -1,0 +1,10 @@
+{
+  "forest": {
+    "name": "Forest",
+    "monster_ids": ["slime", "wolf", "orc", "forest_guardian"]
+  },
+  "cave": {
+    "name": "Cave",
+    "monster_ids": ["skeleton", "skeleton", "cave_troll"]
+  }
+}

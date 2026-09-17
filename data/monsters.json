@@ -1,0 +1,8 @@
+{
+  "slime": { "name": "Slime", "hp": 10, "attack_rating": 2, "defense_rating": 0, "boss": false },
+  "wolf": { "name": "Wolf", "hp": 25, "attack_rating": 6, "defense_rating": 1, "boss": false },
+  "orc": { "name": "Orc", "hp": 40, "attack_rating": 9, "defense_rating": 2, "boss": false },
+  "forest_guardian": { "name": "Forest Guardian", "hp": 80, "attack_rating": 14, "defense_rating": 5, "boss": true },
+  "skeleton": { "name": "Skeleton", "hp": 20, "attack_rating": 5, "defense_rating": 1, "boss": false },
+  "cave_troll": { "name": "Cave Troll", "hp": 100, "attack_rating": 18, "defense_rating": 6, "boss": true }
+}
