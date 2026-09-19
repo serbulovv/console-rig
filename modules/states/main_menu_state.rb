@@ -3,7 +3,11 @@
 module Modules
   module States
     class MainMenuState < MenuState
-      FIELDS = [{ name: 'Start', position: 1 }, { name: 'Exit', position: 2 }].freeze
+      FIELDS = [
+        { name: 'Start', position: 1 },
+        { name: 'Inventory', position: 2 },
+        { name: 'Exit', position: 3 }
+      ].freeze
 
       def render
         clear_menus
@@ -20,6 +24,8 @@ module Modules
         when 1
           context.transition_to(DungeonsMenuState.new)
         when 2
+          context.transition_to(InventoryState.new)
+        when 3
           context.transition_to(nil)
         else
           puts Helpers::Locales::WRONG_MENU_OPTION_ERROR

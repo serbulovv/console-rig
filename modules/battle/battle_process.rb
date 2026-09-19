@@ -19,6 +19,7 @@ module Modules
         end
 
         render_screen
+        award_loot if winner == :player
         announce_result
       end
 
@@ -56,6 +57,16 @@ module Modules
 
       def battle_over?
         @player.hp <= 0 || @enemy.hp <= 0
+      end
+
+      def award_loot
+        loot = Modules::Loot::LootResolver.resolve('drops' => @enemy.drops)
+
+        loot.each do |drop|
+          @player.add_item(drop[:item_id], drop[:quantity])
+          item_name = Modules::Repositories::ItemRepository.find(drop[:item_id])['name']
+          puts Helpers::Locales::LOOT_RECEIVED % { item_name: item_name, quantity: drop[:quantity] }
+        end
       end
 
       def announce_result

@@ -10,6 +10,8 @@ module Modules
       end
 
       def render
+        @player.restore_hp!
+
         battle_process = Battle::BattleProcess.new(@player, @enemy)
         battle_process.run
 

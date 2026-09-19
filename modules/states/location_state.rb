@@ -50,7 +50,8 @@ module Modules
           hp: monster_data['hp'],
           attack_rating: monster_data['attack_rating'],
           defense_rating: monster_data['defense_rating'],
-          strategy: Strategies::BasicAttackStrategy.new
+          strategy: Strategies::BasicAttackStrategy.new,
+          drops: monster_data['drops']
         )
       end
     end

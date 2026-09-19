@@ -8,14 +8,21 @@ module Models
     BASE_ATTACK_RATING = 2
     BASE_DEFENSE_RATING = 1
     BASE_LEVEL = 1
-    BASE_NAME = 'Player'
 
-    attr_accessor :hp, :attack_rating, :defense_rating, :level, :strategy
+    attr_accessor :hp, :attack_rating, :defense_rating, :level, :strategy, :inventory
     attr_reader :name
 
-    def initialize(name: BASE_NAME)
+    def initialize(name: 'Гравець')
       @name = name
       setup_base_values
+    end
+
+    def restore_hp!
+      @hp = BASE_HP
+    end
+
+    def add_item(item_id, quantity)
+      @inventory[item_id] += quantity
     end
 
     private
@@ -26,6 +33,7 @@ module Models
       @defense_rating = BASE_DEFENSE_RATING
       @level = BASE_LEVEL
       @strategy = Modules::Strategies::BasicAttackStrategy.new
+      @inventory = Hash.new(0)
     end
   end
 end

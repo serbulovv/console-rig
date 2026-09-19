@@ -16,5 +16,9 @@ module Helpers
 
     BOSS_LABEL = '%{name} (BOSS)'
     BACK_OPTION_LABEL = 'Back'
+    
+    LOOT_RECEIVED = 'Received: %{item_name} x%{quantity}'
+    INVENTORY_TITLE = 'Inventory'
+    INVENTORY_EMPTY = 'Your inventory is empty'
   end
 end

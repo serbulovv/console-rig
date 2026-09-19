@@ -1,0 +1,9 @@
+{
+  "gold_coin": { "name": "Gold Coin", "type": "currency" },
+  "slime_gel": { "name": "Slime Gel", "type": "material" },
+  "wolf_pelt": { "name": "Wolf Pelt", "type": "material" },
+  "orc_tusk": { "name": "Orc Tusk", "type": "material" },
+  "guardian_heart": { "name": "Guardian Heart", "type": "material" },
+  "bone_fragment": { "name": "Bone Fragment", "type": "material" },
+  "troll_hide": { "name": "Troll Hide", "type": "material" }
+}

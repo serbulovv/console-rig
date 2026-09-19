@@ -13,6 +13,7 @@ require_relative 'models/player'
 
 require_relative 'modules/repositories/location_repository'
 require_relative 'modules/repositories/monster_repository'
+require_relative 'modules/repositories/item_repository'
 
 require_relative 'modules/battle/battle_process'
 
@@ -21,8 +22,11 @@ require_relative 'modules/states/main_menu_state'
 require_relative 'modules/states/dungeons_menu_state'
 require_relative 'modules/states/location_state'
 require_relative 'modules/states/fight_state'
+require_relative 'modules/states/inventory_state'
 
 require_relative 'modules/menu_context'
+
+require_relative 'modules/loot/loot_resolver'
 
 class App
   def call
