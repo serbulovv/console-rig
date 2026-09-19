@@ -6,7 +6,9 @@ module Modules
       FIELDS = [
         { name: 'Start', position: 1 },
         { name: 'Inventory', position: 2 },
-        { name: 'Exit', position: 3 }
+        { name: 'Craft', position: 3 },
+        { name: 'Equipment', position: 4 },
+        { name: 'Exit', position: 5 }
       ].freeze
 
       def render
@@ -26,6 +28,10 @@ module Modules
         when 2
           context.transition_to(InventoryState.new)
         when 3
+          context.transition_to(CraftingState.new)
+        when 4
+          context.transition_to(EquipmentState.new)
+        when 5
           context.transition_to(nil)
         else
           puts Helpers::Locales::WRONG_MENU_OPTION_ERROR

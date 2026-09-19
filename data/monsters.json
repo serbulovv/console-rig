@@ -7,7 +7,7 @@
     ]
   },
   "wolf": {
-    "name": "Wolf", "hp": 25, "attack_rating": 6, "defense_rating": 1, "boss": false,
+    "name": "Wolf", "hp": 15, "attack_rating": 4, "defense_rating": 1, "boss": false,
     "drops": [
       { "item_id": "gold_coin", "chance": 0.8, "min": 2, "max": 8 },
       { "item_id": "wolf_pelt", "chance": 0.4, "min": 1, "max": 1 }

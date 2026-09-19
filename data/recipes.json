@@ -1,0 +1,21 @@
+{
+  "iron_sword": {
+    "result_item_id": "iron_sword",
+    "materials": [
+      { "item_id": "orc_tusk", "quantity": 2 },
+      { "item_id": "gold_coin", "quantity": 10 }
+    ]
+  },
+  "wolf_armor": {
+    "result_item_id": "wolf_armor",
+    "materials": [
+      { "item_id": "wolf_pelt", "quantity": 3 }
+    ]
+  },
+  "slime_dagger": {
+  "result_item_id": "slime_dagger",
+  "materials": [
+    { "item_id": "slime_gel", "quantity": 3 }
+  ]
+  }
+}

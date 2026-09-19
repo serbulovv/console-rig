@@ -14,6 +14,7 @@ require_relative 'models/player'
 require_relative 'modules/repositories/location_repository'
 require_relative 'modules/repositories/monster_repository'
 require_relative 'modules/repositories/item_repository'
+require_relative 'modules/repositories/recipe_repository'
 
 require_relative 'modules/battle/battle_process'
 
@@ -23,6 +24,12 @@ require_relative 'modules/states/dungeons_menu_state'
 require_relative 'modules/states/location_state'
 require_relative 'modules/states/fight_state'
 require_relative 'modules/states/inventory_state'
+require_relative 'modules/states/crafting_state'
+require_relative 'modules/states/equipment_state'
+
+require_relative 'modules/crafting/craft_item_form'
+
+require_relative 'modules/equipment/equip_item_service'
 
 require_relative 'modules/menu_context'
 

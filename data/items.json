@@ -5,5 +5,26 @@
   "orc_tusk": { "name": "Orc Tusk", "type": "material" },
   "guardian_heart": { "name": "Guardian Heart", "type": "material" },
   "bone_fragment": { "name": "Bone Fragment", "type": "material" },
-  "troll_hide": { "name": "Troll Hide", "type": "material" }
+  "troll_hide": { "name": "Troll Hide", "type": "material" },
+  "iron_sword": {
+    "name": "Iron Sword",
+    "type": "equipment",
+    "slot": "weapon",
+    "attack_bonus": 5,
+    "defense_bonus": 0
+  },
+  "wolf_armor": {
+    "name": "Wolf Armor",
+    "type": "equipment",
+    "slot": "armor",
+    "attack_bonus": 0,
+    "defense_bonus": 3
+  },
+  "slime_dagger": {
+  "name": "Slime Dagger",
+  "type": "equipment",
+  "slot": "weapon",
+  "attack_bonus": 2,
+  "defense_bonus": 0
+  }
 }

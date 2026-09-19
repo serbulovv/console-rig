@@ -20,5 +20,13 @@ module Helpers
     LOOT_RECEIVED = 'Received: %{item_name} x%{quantity}'
     INVENTORY_TITLE = 'Inventory'
     INVENTORY_EMPTY = 'Your inventory is empty'
+
+    CRAFTING_TITLE = 'Craft an item'
+    CRAFT_SUCCESS = 'Item crafted successfully!'
+    CRAFT_UNKNOWN_RECIPE = 'Unknown recipe'
+    CRAFT_MISSING_MATERIALS = 'Missing materials: %{items}'
+
+    EQUIPMENT_TITLE = 'Equip an item'
+    EQUIP_SUCCESS = 'Item equipped!'
   end
 end
